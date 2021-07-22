@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:background="@drawable/gradient_list1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMIFragment">
+
+    <EditText
+        android:layout_marginTop="1dp"
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textStyle="italic"
+        android:textColor="@android:color/white"
+
+
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:hint="Enter Height (in cm)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:gravity="center"
+
+        android:layout_marginTop="1dp"
+        android:textColor="@android:color/white"
+
+        android:textStyle="italic"
+
+        android:fontFamily="serif"
+
+        android:hint="Enter Weight (in kg)"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    <Button
+        android:id="@+id/clearall_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:layout_marginTop="1dp"
+        android:fontFamily="serif"
+        android:background="@drawable/gradient3"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+
+        android:textStyle="bold"
+        android:text="Clear"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearall_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:fontFamily="serif"
+        android:background="@drawable/gradient1"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/result_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:layout_marginTop="1dp"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"
+
+        android:textStyle="italic"
+
+        android:textSize="20sp"
+        android:text="" />
+
+
+</RelativeLayout>

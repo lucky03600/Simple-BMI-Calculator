@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".SimpleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:layout_marginTop="1dp"
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"
+
+        android:textStyle="italic"
+
+
+        android:gravity="center"
+        android:hint="Enter 1st No."
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:textStyle="italic"
+        android:textColor="@android:color/white"
+
+
+
+        android:layout_marginTop="1dp"
+        android:fontFamily="serif"
+
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter 2nd No."
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/gradient3"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/subtraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+
+            android:layout_weight="1"
+            android:textSize="20sp"
+
+            android:background="@drawable/gradient1"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/multiplication"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/gradient5"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/division"
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+
+            android:background="@drawable/gradient6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:background="@drawable/gradient4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+
+
+            android:text="Clear" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout2"
+        android:layout_marginTop="1dp"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+
+
+        android:text="0.00"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

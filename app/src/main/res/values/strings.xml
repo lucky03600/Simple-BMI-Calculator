@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Simple &amp; BMI Calculator</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about">
+        This is a simple calculator and a BMI calculator app.
+    </string>
+
+    <string name="about1">
+        In this app, you can perform simple mathematical calculations and calculate your BMI by simply putting your height(in cm) and weight(in kg).
+    </string>
+
+</resources>
